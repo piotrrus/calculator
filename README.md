@@ -1,3 +1,24 @@
+# Application description
+
+## Todo
+BEM styling
+Responsivity
+<s>Application styling according to provided Figma design</s>
+signal as Output in common (parent) class
+<s>signal as Input</s>
+<s>Common class for Forms</s>
+<s>Common class for services</s>
+<s>Service for Calculation Types Data</s>
+<s>Calculations class</s>
+<s>Ngrx for calculator</s>
+<s>Form with validation class</s>
+<s>Routing</s>
+<s>Feature Page component </s>
+<s>Result Card Component</s>
+<s>Description Card Component</s>
+<s>Nx Workspace</s>
+
+
 # Org
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>

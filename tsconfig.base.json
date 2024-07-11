@@ -1,0 +1,32 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2022",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@org/calculations": ["libs/utils/src/index.ts"],
+      "@org/features/calculator-page": [
+        "libs/features/calculator-page/src/index.ts"
+      ],
+      "@org/shared/base-form": ["libs/shared/base-form/src/index.ts"],
+      "@org/shared/mortgage-model": ["libs/shared/mortgage-model/src/index.ts"],
+      "@org/storage-providers": ["libs/shell/providers/src/index.ts"],
+      "@org/store": ["libs/core/src/index.ts"],
+      "@ui/description-card": ["libs/ui/description-card/src/index.ts"],
+      "@ui/form-card": ["libs/ui/form-card/src/index.ts"],
+      "@ui/result-card": ["libs/ui/result-card/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

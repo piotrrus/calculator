@@ -17,6 +17,8 @@ signal as Output in common (parent) class
 
 <s>Service for Calculation Types Data</s>
 
+Implementing Service for Calculation Types Data
+
 <s>Calculations class</s>
 
 <s>Ngrx for calculator</s>

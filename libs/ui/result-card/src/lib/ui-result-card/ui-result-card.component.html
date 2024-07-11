@@ -1,0 +1,14 @@
+<div class="main-section">
+    <p class="result-title">Your results</p>
+    <p class="result-desciption">
+      Your results are shown below based on the information you provided. To
+      adjust the results, edit the form and click “calculate repayments” again.
+    </p>
+    <div class="result-section">
+      <p class="result-monthly-payment-title">Your monthly repayment</p>
+      <p class="result-monthly-payment">{{monthlyRepayments()| currency:'GBP':'symbol' }}</p>
+      <hr>
+      <p>Total you'll repay over the term</p>
+      <p class="result-total-repay">{{totalRepay() | currency:'GBP':'symbol' }}</p>
+    </div>
+  </div>

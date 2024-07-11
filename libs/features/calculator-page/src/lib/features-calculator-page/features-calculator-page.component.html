@@ -1,0 +1,30 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="main">
+      <div class="half-width">
+        <div class="title">
+          Mortgage Calculator
+          <button href="#" class="clear-form-btn" (click)="clearAll()">
+            Clear All
+          </button>
+        </div>
+        <lib-ui-form-card
+          [resetForm]="resetForm"
+          (formChange)="onCalculatorFormChange($event)"
+          (isFormValid)="onCalculatorFormValid($event)"
+          (isSendCalculation)="onCalculating()"
+        ></lib-ui-form-card>
+      </div>
+      <div class="half-width description">
+        @if (!isCalculated()) {
+        <lib-ui-description-card></lib-ui-description-card>
+        } @else {
+        <lib-ui-result-card
+          [monthlyRepayments]="monthlyRepayments()"
+          [totalRepay]="totalRepay()"
+        ></lib-ui-result-card>
+        }
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+@import '../../../../../../src/styles/colors.scss';
+@import '../../../../../../src/styles/fonts.scss';
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.with-margin {
+  margin-right: 10px;
+}
+
+.title {
+  text-align: left;
+  font-size: $medium-large;
+  color: $slate-900;
+}
+
+.description {
+  text-align: center;
+  background-color: $slate-900;
+  padding: 40px;
+  border-radius: 0% 10% 10% 24%;
+}
+
+
+.clear-form-btn {
+  color: $slate-700;
+  font-size: $x-small;
+  text-decoration: underline;
+  float: right;
+  margin-right: 40px;
+  margin-top: 10px;
+}

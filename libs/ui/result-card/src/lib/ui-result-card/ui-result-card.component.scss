@@ -1,0 +1,44 @@
+@import '../../../../../../src/styles/colors.scss';
+@import '../../../../../../src/styles/fonts.scss' ;
+// @import '@styles/fonts.scss' ;
+
+.main-section {
+  text-align: left;
+}
+.result {
+  color: $slate-300;
+  font-size: $small;
+  &-title {
+    color: $white;
+    font-size: $medium;
+    margin-bottom: 10px;
+  }
+  &-desciption {
+    color: $slate-300;
+    margin-bottom: 20px;
+  }
+
+  &-repayments {
+    color: $white;
+  }
+  &-section {
+    width: 100%;
+    height: 293px;
+    border-top: 4px $lime;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 32px;
+  }
+
+  &-monthly-payment {
+    color: $lime;
+    font-size: $large;
+    &-title {
+      color: $slate-300;
+      margin-bottom: 8px;
+    }
+  }
+  &-total-repay {
+    color: $white;
+    font-size: $medium-large;
+  }
+}

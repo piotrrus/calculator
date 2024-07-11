@@ -1,0 +1,96 @@
+<div class="calculator-form">
+  <div [formGroup]="form.form" class="app-form">
+    <label for="name">Mortgage Amount</label>
+    <input type="text" name="amount" formControlName="amount" />
+    <div
+      class="form-field-error"
+      *ngIf="
+        form.amount?.hasError('required') &&
+        (form.amount?.dirty || form.amount?.touched)
+      "
+    >
+      {{ errors.REQUIRED }}
+    </div>
+    <div
+      class="form-field-error"
+      *ngIf="
+        form.amount?.hasError('pattern') &&
+        (form.amount?.dirty || form.amount?.touched)
+      "
+    >
+      {{ errors.NUMBERS }}
+    </div>
+    <div class="main">
+      <div class="half-width with-margin">
+        <label for="term">Mortgage Term </label>
+        <input type="text" name="term" formControlName="term" />
+        <div
+          class="form-field-error"
+          *ngIf="
+            form.term?.hasError('required') &&
+            (form.term?.dirty || form.term?.touched)
+          "
+        >
+          {{ errors.REQUIRED }}
+        </div>
+        <div
+          class="form-field-error"
+          *ngIf="
+            form.term?.hasError('pattern') &&
+            (form.term?.dirty || form.term?.touched)
+          "
+        >
+          {{ errors.NUMBERS }}
+        </div>
+      </div>
+      <div class="half-width">
+        <label for="rate">Interest Rate </label>
+        <input type="text" name="rate" formControlName="rate" />
+        <div
+          class="form-field-error"
+          *ngIf="
+            form.rate?.hasError('required') &&
+            (form.rate?.dirty || form.rate?.touched)
+          "
+        >
+          {{ errors.REQUIRED }}
+        </div>
+        <div
+          class="form-field-error"
+          *ngIf="
+            form.rate?.hasError('pattern') &&
+            (form.rate?.dirty || form.rate?.touched)
+          "
+        >
+          {{ errors.NUMBERS }}
+        </div>
+      </div>
+    </div>
+
+    <p class="radio-label">Mortgage Type</p>
+
+    <label class="radio-control">
+      <input type="radio" name="type" formControlName="type" value="repayment"/>
+      Repayment
+    </label>
+
+    <label class="radio-control">
+      <input type="radio" name="type" formControlName="type" value="interest"/>
+      Interest Only
+    </label>
+    <div
+      class="form-field-error"
+      *ngIf="
+        form.type?.hasError('required') &&
+        (form.type?.dirty || form.type?.touched)
+      "
+    >
+      {{ errors.REQUIRED }}
+    </div>
+  </div>
+  <input
+    type="button"
+    value="Calculate Repayments"
+    (click)="sendCalculation()"
+  />
+</div>

@@ -2,7 +2,9 @@
 
 ## Todo
 BEM styling
+
 Responsivity
+
 <s>Application styling according to provided Figma design</s>
 
 signal as Output in common (parent) class

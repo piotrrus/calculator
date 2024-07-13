@@ -18,4 +18,17 @@ describe('FeaturesCalculatorPageComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should be call onCalculating', () => {
+    const spy = spyOn(component, 'onCalculating');
+    component.onCalculating();
+    expect(spy).toHaveBeenCalled();
+  });
+
+  it('should be resetForm to be true after call clearAll ', () => {
+    const spy = spyOn(component, 'resetForm');
+    component.clearAll();
+    expect(spy).toEqual(true);
+  });
+
 });

@@ -8,8 +8,11 @@
             Clear All
           </button>
         </div>
+        <!--          [mortgageTypes]="mortgageTypes$ | async" -->
         <lib-ui-form-card
           [resetForm]="resetForm"
+
+          [mortgageTypesList] = "mortgageTypesList()"
           (formChange)="onCalculatorFormChange($event)"
           (isFormValid)="onCalculatorFormValid($event)"
           (isSendCalculation)="onCalculating()"

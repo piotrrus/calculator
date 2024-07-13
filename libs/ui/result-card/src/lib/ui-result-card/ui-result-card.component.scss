@@ -1,6 +1,5 @@
-@import '../../../../../../src/styles/colors.scss';
-@import '../../../../../../src/styles/fonts.scss' ;
-// @import '@styles/fonts.scss' ;
+@import '../../../../../../src/app/styles/colors.scss';
+@import '../../../../../../src/app/styles/fonts.scss';
 
 .main-section {
   text-align: left;
@@ -40,5 +39,8 @@
   &-total-repay {
     color: $white;
     font-size: $medium-large;
+    &-title {
+      color: $slate-300;
+    }
   }
 }

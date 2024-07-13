@@ -7,7 +7,7 @@ Stylowanie responsywne (telefon, tablet, komputer)
 
 <s>Stylowanie aplikacji zgodnie z dostarczonym projektem w Figmie.</s>
 
-<s>Wykorzystanie sygnałów zamiast @Inputów we wsplónej klasie (parent)</s>
+<s>Wykorzystanie sygnałów zamiast @Inputów we wspólnej klasie (parent)</s>
 
 <s>Wykorzystanie sygnałów zamiast @Input</s>
 
@@ -17,7 +17,7 @@ Stylowanie responsywne (telefon, tablet, komputer)
 
 <s>Service for Calculation Types Data</s>
 
-Implementajca Serwisu dla danych typu kalkulacji problem z importem plików w wersji 18 
+<s>Implementajca Serwisu dla danych typu kalkulacji</s> 
 
 <s>Utworzenie wydzielona klasa dla obliczeń</s>
 

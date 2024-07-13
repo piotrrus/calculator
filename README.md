@@ -17,7 +17,7 @@ Stylowanie responsywne (telefon, tablet, komputer)
 
 <s>Service for Calculation Types Data</s>
 
-Implementing Service for Calculation Types Data - problem z importem plików w wersji 18 
+Implementajca Serwisu dla danych typu kalkulacji problem z importem plików w wersji 18 
 
 <s>Utworzenie wydzielona klasa dla obliczeń</s>
 

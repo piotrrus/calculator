@@ -1,11 +1,10 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  EventEmitter,
-  Output,
+  OutputEmitterRef,
   effect,
   input,
-  // output,
+  output,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
@@ -28,9 +27,9 @@ export class UiFormCardComponent extends BaseFormComponent {
   public form: CalculatorForm = new CalculatorForm(this.fb);
   public errors = FORM_ERROR_MESSAGES;
 
-  @Output() public formChange = new EventEmitter<MortgageCalculation>();
-  @Output() public isFormValid = new EventEmitter<boolean>();
-  @Output() public isSendCalculation = new EventEmitter<boolean>();
+  public isSendCalculation: OutputEmitterRef<boolean> = output<boolean>();
+  public isFormValid: OutputEmitterRef<boolean> = output<boolean>();
+  public formChange: OutputEmitterRef<MortgageCalculation> = output<MortgageCalculation>();
 
   constructor(private fb: FormBuilder) {
     super();

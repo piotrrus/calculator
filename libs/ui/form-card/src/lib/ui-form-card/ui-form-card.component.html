@@ -68,16 +68,17 @@
     </div>
 
     <p class="radio-label">Mortgage Type</p>
-
-    <label class="radio-control">
-      <input type="radio" name="type" formControlName="type" value="repayment"/>
-      Repayment
-    </label>
-
-    <label class="radio-control">
-      <input type="radio" name="type" formControlName="type" value="interest"/>
-      Interest Only
-    </label>
+    @for (type of mortgageTypesList(); track type.name){
+      <label class="radio-control">
+        <input
+          type="radio"
+          name="type"
+          formControlName="type"
+          value="{{type.id}}"
+        />
+        {{type.name}}
+      </label>
+    }
     <div
       class="form-field-error"
       *ngIf="
@@ -88,9 +89,11 @@
       {{ errors.REQUIRED }}
     </div>
   </div>
+
   <input
     type="button"
     value="Calculate Repayments"
     (click)="sendCalculation()"
+    class="calculation-btn"
   />
 </div>

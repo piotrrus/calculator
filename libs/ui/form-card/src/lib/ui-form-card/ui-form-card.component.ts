@@ -24,6 +24,8 @@ import { MortgageCalculation } from '@org/shared/mortgage-model';
 
 export class UiFormCardComponent extends BaseFormComponent {
   public resetForm = input<boolean>();
+  // public mortgageTypes = input<any>();
+ public mortgageTypesList = input<any>();
   public form: CalculatorForm = new CalculatorForm(this.fb);
   public errors = FORM_ERROR_MESSAGES;
 

@@ -1,41 +1,39 @@
 # Application description
 
 ## Todo
-BEM styling
+BEM  - stylowanie
 
-Responsivity
+Stylowanie responsywne (telefon, tablet, komputer)
 
-<s>Application styling according to provided Figma design</s>
+<s>Stylowanie aplikacji zgodnie z dostarczonym projektem w Figmie.</s>
 
-signal as Output in common (parent) class
+<s>Wykorzystanie sygnałów zamiast @Inputów we wsplónej klasie (parent)</s>
 
-<s>signal as Input</s>
+<s>Wykorzystanie sygnałów zamiast @Input</s>
 
-<s>Common class for Forms</s>
+<s>Wydzielenie klasy wspólnej dla komponentów typu dump (emitowanie zmian w  formularzu)  </s>
 
-<s>Common class for services</s>
+<s>Wydzielenie wspólnej klasy (parenta) dla serwisów (cachowanie, obsługa błędów)</s>
 
 <s>Service for Calculation Types Data</s>
 
-Implementing Service for Calculation Types Data
+Implementing Service for Calculation Types Data - problem z importem plików w wersji 18 
 
-<s>Calculations class</s>
+<s>Utworzenie wydzielona klasa dla obliczeń</s>
 
-<s>Ngrx for calculator</s>
+<s>Środowisko Ngrx dla aplikacji</s>
 
-<s>Form with validation class</s>
+<s>Utworzenie klasy formularza z walidacją</s>
 
 <s>Routing</s>
 
-<s>Feature Page component </s>
+<s>Utworzenie komponentu Feature Page</s>
 
-<s>Result Card Component</s>
+<s>Utworzenie komponentu Result Card</s>
 
-<s>Description Card Component</s>
+<s>Utworzenie komponentu Description Card </s>
 
-<s>Nx Workspace</s>
-
-Testing
+<s>Testing</s>
 # Org
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>

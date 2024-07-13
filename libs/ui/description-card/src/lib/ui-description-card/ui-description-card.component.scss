@@ -1,5 +1,5 @@
-@import '../../../../../../src/styles/colors.scss';
-@import '../../../../../../src/styles/fonts.scss';
+@import '../../../../../../src/app/styles/colors.scss';
+@import '../../../../../../src/app/styles/fonts.scss';
 
 .description {
   text-align: center;
@@ -8,7 +8,7 @@
   border-radius: 0% 10% 10% 24%;
 
   &-image {
-    background-image: url('../../../../../../src/assets/calculating.png');
+    background-image: url('../../../../../../src/assets/images/calculating.png');
     background-repeat: no-repeat;
     background-position: center;
     height: 192px;

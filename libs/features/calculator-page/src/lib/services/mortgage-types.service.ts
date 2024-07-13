@@ -6,6 +6,6 @@ import { RestResponse } from './rest-response.interface';
 @Injectable()
 export class MortgageTypesService extends ApiService {
   public getMortgageTypes(): Observable<RestResponse[]> {
-    return this.get<RestResponse[]>('./assets/data/mortgage-types.json');
+    return this.get<RestResponse[]>('data/mortgage-types.json');
   }
 }

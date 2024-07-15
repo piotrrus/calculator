@@ -35,7 +35,8 @@ Stylowanie responsywne (telefon, tablet, komputer)
 
 <s>Testing</s>
 # Uwagi
-Ogólne stylowanie dla formularza, umieszczone w ui-card-form component, powinno się znaleźć we wspólnym pliku forms.scss
+Plik z danymi json zostal umieszczony w folderze Public, co nie jest dobrym rozwiązaniem. Folder Assets nie był widoczny.
+Pliki ogólen dla styli zostały umieszczone w folderze Styles. Scieżka dostepu do niech jest troch długa. Próba jest skrócenia w aliasie nieudana.
 Dużym utrudnieniem w nx workspace są pliki występujące w różnych miejscach aplikacji - np. mortgage-calculation interface.
 
 # Org

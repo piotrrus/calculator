@@ -1,4 +1,4 @@
-import { Component, DestroyRef, inject, Signal } from '@angular/core';
+import { Component, DestroyRef, inject } from '@angular/core';
 import { UiResultCardComponent } from '@ui/result-card';
 import { UiDescriptionCardComponent } from '@ui/description-card';
 import { UiFormCardComponent } from '@ui/form-card';
@@ -6,9 +6,7 @@ import { MortgageCalculation } from '@org/shared/mortgage-model';
 import { Facade } from '@org/store';
 import { CommonModule, NgIf } from '@angular/common';
 import { MortgageTypesService } from '../services/mortgage-types.service';
-import { Observable } from 'rxjs';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { RestResponse } from '../services/rest-response.interface';
 
 @Component({
   selector: 'lib-features-calculator-page',
@@ -29,10 +27,8 @@ export class FeaturesCalculatorPageComponent {
   public isCalculated = this.facade.isCalculated;
   public monthlyRepayments = this.facade.monthlyRepayment;
   public totalRepay = this.facade.totalRepay;
-  public mortgageTypes$: Observable<RestResponse[]> =
-    this.mortgageTypesService.getMortgageTypes();
 
-  public mortgageTypesList= toSignal(
+  public mortgageTypesList = toSignal(
     this.mortgageTypesService.getMortgageTypes()
   );
 

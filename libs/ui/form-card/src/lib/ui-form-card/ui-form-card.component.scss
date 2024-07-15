@@ -51,14 +51,19 @@ input[type='submit'] {
   border-radius: 25px;
   width: 282px;
 }
-.calculation-btn{
-   background-image: url('../../../../../../src/assets/images/ph_calculator-fill.svg');
-   background-repeat: no-repeat;
-   background-position: left;
-   background-position-x: 15px;
-   margin-left: 25px;
+.calculation {
+  &-form {
+    margin-right: 40px;
+  }
+  &-btn {
+    background-image: url('../../../../../../src/assets/images/ph_calculator-fill.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 15px;
+    margin-left: 25px;
+  }
 }
 
-.calculator-form {
-  margin-right: 40px;
-}
+// .calculator-form {
+//   margin-right: 40px;
+// }

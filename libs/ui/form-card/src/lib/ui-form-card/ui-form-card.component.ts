@@ -21,17 +21,16 @@ import { MortgageCalculation } from '@org/shared/mortgage-model';
   styleUrl: './ui-form-card.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-
 export class UiFormCardComponent extends BaseFormComponent {
   public resetForm = input<boolean>();
-  // public mortgageTypes = input<any>();
- public mortgageTypesList = input<any>();
+  public mortgageTypesList = input<any>();
   public form: CalculatorForm = new CalculatorForm(this.fb);
   public errors = FORM_ERROR_MESSAGES;
 
   public isSendCalculation: OutputEmitterRef<boolean> = output<boolean>();
   public isFormValid: OutputEmitterRef<boolean> = output<boolean>();
-  public formChange: OutputEmitterRef<MortgageCalculation> = output<MortgageCalculation>();
+  public formChange: OutputEmitterRef<MortgageCalculation> =
+    output<MortgageCalculation>();
 
   constructor(private fb: FormBuilder) {
     super();

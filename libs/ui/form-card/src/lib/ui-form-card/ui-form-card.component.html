@@ -1,4 +1,4 @@
-<div class="calculator-form">
+<div class="calculation-form">
   <div [formGroup]="form.form" class="app-form">
     <label for="name">Mortgage Amount</label>
     <input type="text" name="amount" formControlName="amount" />
@@ -69,15 +69,15 @@
 
     <p class="radio-label">Mortgage Type</p>
     @for (type of mortgageTypesList(); track type.name){
-      <label class="radio-control">
-        <input
-          type="radio"
-          name="type"
-          formControlName="type"
-          value="{{type.id}}"
-        />
-        {{type.name}}
-      </label>
+    <label class="radio-control">
+      <input
+        type="radio"
+        name="type"
+        formControlName="type"
+        value="{{ type.id }}"
+      />
+      {{ type.name }}
+    </label>
     }
     <div
       class="form-field-error"

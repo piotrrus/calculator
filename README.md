@@ -34,6 +34,10 @@ Stylowanie responsywne (telefon, tablet, komputer)
 <s>Utworzenie komponentu Description Card </s>
 
 <s>Testing</s>
+# Uwagi
+Ogólne stylowanie dla formularza, umieszczone w ui-card-form component, powinno się znaleźć we wspólnym pliku forms.scss
+Dużym utrudnieniem w nx workspace są pliki występujące w różnych miejscach aplikacji - np. mortgage-calculation interface.
+
 # Org
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>

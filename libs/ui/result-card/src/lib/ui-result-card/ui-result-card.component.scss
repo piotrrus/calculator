@@ -1,12 +1,10 @@
 @import '../../../../../../src/app/styles/colors.scss';
 @import '../../../../../../src/app/styles/fonts.scss';
 
-.main-section {
-  text-align: left;
-}
-.result {
-  color: $slate-300;
-  font-size: $small;
+.main {
+  &-section {
+    text-align: left;
+  }
   &-title {
     color: $white;
     font-size: $medium;
@@ -14,9 +12,13 @@
   }
   &-desciption {
     color: $slate-300;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
+}
 
+.result {
+  color: $slate-300;
+  font-size: $small;
   &-repayments {
     color: $white;
   }

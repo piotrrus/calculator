@@ -49,5 +49,16 @@ input[type='submit'] {
   padding-left: 20px;
   height: 56px;
   border-radius: 25px;
-  width: 282px;
+  @media only screen and (min-width: 1024px) {
+    width: 314px;
+  }
+  @media only screen and (min-width: 300px) {
+    width: 327px;
+  }
+}
+
+.form-field-error {
+  color: $red;
+  font-size: $x-small;
+  margin-top: 5px;
 }

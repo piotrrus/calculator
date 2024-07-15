@@ -14,17 +14,17 @@
     height: 192px;
     margin-top: 15%;
   }
-}
 
-.result {
-  color: $white;
-  font-size: $medium-large;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
+  &-result {
+    color: $white;
+    font-size: $medium-large;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
 
-.complete {
-  color: $slate-300;
-  font-size: $small;
-  line-height: 150%;
+  &-complete {
+    color: $slate-300;
+    font-size: $small;
+    line-height: 150%;
+  }
 }

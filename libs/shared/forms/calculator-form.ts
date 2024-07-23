@@ -1,15 +1,16 @@
-import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup, Validators, ValidatorsFn } from '@angular/forms';
 
 export class CalculatorForm {
      private frm: FormGroup = this.createForm();
-
+     private formValidators: ValidatorsFn[] = [Validators.required, Validators.pattern("^[0-9]*$")];
+     
      constructor(private fb: FormBuilder) {}
 
      private createForm(): FormGroup {
           return (this.frm = this.fb.group({
-               amount: ['', [Validators.required, Validators.pattern("^[0-9]*$")]],
-               term: ['', [Validators.required, Validators.pattern("^[0-9]*$")]],
-               rate: ['', [Validators.required,  Validators.pattern("^[0-9]*$")]],
+               amount: ['', [...this.formValidators]],
+               term: ['', [...this.formValidators]],
+               rate: ['', [...this.formValidators]]],
                type: ['', [Validators.required]],
           }));
      }
